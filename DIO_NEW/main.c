@@ -13,16 +13,16 @@ int main ()
 
 	while(1)
 	{
-		PORTA = 1;
+		PORTB = 1;
 		for (char i = 0 ; i < 3 ; i++)
 		{
 			_delay_ms(250);
-			PORTA <<= 1;
+			PORTB <<= 1;
 		}
 		for (char i = 0 ; i < 3 ; i++)
 		{
 			_delay_ms(250);
-			PORTA >>= 1;
+			PORTB >>= 1;
 		}
 	}
 
